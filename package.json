@@ -1,0 +1,41 @@
+{
+  "author": "Sumit Ghosh",
+  "contributors": [
+    "Sumit Ghosh <sumitmckv14@gmail.com>"
+  ],
+  "description": "Node demo project",
+  "name": "node-starter",
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=10.0"
+  },
+  "scripts": {
+    "tsc": "tsc",
+    "start": "node dist/src/index.js",
+    "dev": "nodemon --exec ./node_modules/.bin/ts-node -- ./src/index.ts",
+    "format:lint": "./node_modules/.bin/tslint -c tslint.json 'src/**/*.ts'",
+    "format:prettier": "./node_modules/.bin/prettier --tab-width 4 --print-width 120 --single-quote --trailing-comma all --write 'src/**/*.ts'",
+    "postinstall": "npm run tsc"
+  },
+  "dependencies": {
+    "@hapi/boom": "7.4.11",
+    "@hapi/hapi": "^18.4.0",
+    "@hapi/joi": "15.1.1"
+  },
+  "devDependencies": {
+    "@types/hapi": "^18.0.2",
+    "@types/hapi__boom": "^7.4.1",
+    "@types/hapi__hapi": "^18.2.5",
+    "@types/hapi__joi": "^16.0.2",
+    "@types/node": "^12.6.8",
+    "nodemon": "^1.19.4",
+    "prettier": "^1.19.1",
+    "ts-node": "^8.5.2",
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.2"
+  },
+  "keywords": [
+    "nodejs",
+    "typescript"
+  ]
+}
