@@ -24,7 +24,7 @@ export default class DemoRoutes implements IRoute {
 
       console.log('Route - Finish adding demo routes');
 
-      resolve();
+      resolve("Demo route added");
     });
   }
 }

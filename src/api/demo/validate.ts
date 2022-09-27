@@ -1,9 +1,9 @@
-import * as Joi from '@hapi/joi';
+import * as Joi from 'joi';
 
 export default {
   hello: {
-    params: {
-      name: Joi.string().required(),
-    },
+    params: Joi.object({
+        name: Joi.string().min(3).max(10),
+    }),
   }
 };
